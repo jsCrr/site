@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "DM Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+        header {
+            border-bottom: 1px solid black;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5px;
+            padding-top: 20px;
+        }
+        #profile-name {
+            padding-top: 8px;
+            align-self: flex-start;
+            padding-bottom: 8px;
+            font-size: 20px;
+            padding-left: 15px;
+        }
+        #profile-bio {
+            padding-left: 13px;
+            font-size: 15px;
+            padding-bottom: 5px;
+        }
+        #store-profile-img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50px;
+        }
+        .store-box-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            border: 4px solid black;
+            border-radius: 50px;
+        }
+        .products-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #side-menu-icon {
+            height: 30px;
+            align-self: flex-start;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            text-align: start;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="store-box-img">
+                <img id="store-profile-img" src="src/images/profile.png" alt="profile image">
+            </div>
+            <div class="products-info" id="amount-products">
+                <span id="products-total">0</span>
+                <label for="products-total">produtos</label>
+            </div>
+            <div class="products-info" id="amount-categories">
+                <span id="categories-total">0</span>
+                <label for="categories-total">categorias</label>
+            </div>
+            <img id="side-menu-icon" src="src/icons/menu.svg" alt="side menu icon">
+        </nav>
+        <div class="profile-info">
+            <p id="profile-name">achadinhos da shopee</p>
+            <p id="profile-bio">📦 Produtos imperdíveis.<br>💸 Preços baixos e que cabem no seu bolso.<br>📅 Novos produtos de diversos seguimentos diariamente.<br>🛒 Produtos mais vendidos do mercado livre, amazon, shein e muito mais.<br></p>
+        </div>
+    </header>
+</body>
+</html>
